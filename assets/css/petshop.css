@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 760px;
+    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/slider-111.jpg) top center/cover no-repeat;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#nav .nav-logo{
+    margin-left: 150px;
+}
+#nav .subnav-menu{
+    margin-right: 150px;
+}
+#nav .nav-menu, .subnav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav ul li{
+    list-style-type: none;
+}
+#nav .nav-menu li{
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+#nav .subnav-menu i{
+    font-size: 20px;
+}
+#nav ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    display: block;
+}
+#nav .nav-menu li:hover{
+    background-color: #30b5b2;
+}
+#nav .subnav-menu li:hover > a  {
+    color: white;
+}
+/*PHẦN SLIDER*/
+#slider {
+    color: white;
+    position: absolute;
+    left: 150px;
+    top: 180px;
+}
+#slider .text-heading{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#slider .text-title{
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#slider .text-desc p:nth-child(1){
+    margin-bottom: 15px;
+}
+#slider .buy-btn{
+    margin: 15px 0;
+    line-height: 50px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 27px;
+    font-weight: bold;
+    background-color: #30b5b2;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+#slider a{
+    text-decoration: none;
+    color: white;
+}
+#slider .buy-btn:hover{
+    transform: translateY(-10px);
+}
+/* PHẦN MAIN */
+#main .benefit{
+    width: 100%;
+    height: 100px;
+    padding: 30px 0;
+    background-color: #30b5b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#main .benefit .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .benefit .icon i{
+    font-size: 50px;
+    margin: 0 20px;
+}
+
+#main .benefit .divider{
+    margin: 0 30px;
+    height: 60px;
+    border: 1px dashed rgb(199, 193, 193);
+}
+#main .dog-list .title,
+#main .cat-list .title,
+#main .food-list .title,
+#main .accessory-list .title,
+#main .news-list .title{
+    margin: 80px 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main .dog-list .title p,
+#main .cat-list .title p,
+#main .food-list .title p,
+#main .accessory-list .title p,
+#main .news-list .title p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #3c3451;
+}
+/*Danh sách các loại chó cảnh*/
+
+.dog-list .dog-product-list,
+.cat-list .cat-product-list,
+.food-list .food-product-list,
+.accessory-list .accessory-product-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+.dog-list .dog-product-list .dog-product, 
+.cat-list .cat-product-list .cat-product,
+.food-list .food-product-list .food-product,
+.accessory-list .accessory-product-list .accessory-product {
+    width: 300px;
+    height: 400px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0 10px;
+}
+.dog-list .dog-product-list .dog-product,
+.cat-list .cat-product-list .cat-product,
+.food-list .food-product-list .food-product,
+.accessory-list .accessory-product-list .accessory-product {
+    position: relative;
+}
+.dog-list .dog-product-list .dog-product .anh,
+.cat-list .cat-product-list .cat-product .anh,
+.food-list .food-product-list .food-product .anh,
+.accessory-list .accessory-product-list .accessory-product .anh {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.dog-list .dog-product-list .dog-product .icon,
+.cat-list .cat-product-list .cat-product .icon,
+.food-list .food-product-list .food-product .icon,
+.accessory-list .accessory-product-list .accessory-product .icon {
+    opacity: 0;
+    color: #297472;
+    font-size: 40px;
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.dog-list .dog-product-list .anh:hover .icon,
+.cat-list .cat-product-list .anh:hover .icon,
+.food-list .food-product-list .anh:hover .icon,
+.accessory-list .accessory-product-list .anh:hover .icon{
+    opacity: 1;
+    transform: translateY(-30px);
+}
+
+.dog-list .dog-product-list .anh:hover img,
+.cat-list .cat-product-list .anh:hover img,
+.food-list .food-product-list .anh:hover img,
+.accessory-list .accessory-product-list .anh:hover img {
+    transform: scale(1.1);
+}
+.dog-list .dog-product-list .dog-product .anh img,
+.cat-list .cat-product-list .cat-product .anh img,
+.food-list .food-product-list .food-product .anh img,
+.accessory-list .accessory-product-list .accessory-product .anh img{
+    transition: 0.5s;
+}
+
+.dog-product-list .dog-product .dog-product-title,
+.cat-product-list .cat-product .cat-product-title,
+.food-product-list .food-product .food-product-title,
+.accessory-product-list .accessory-product .accessory-product-title{
+    margin-top: 12px;
+    font-size: 10px;
+    color:  rgb(140, 133, 133);
+}
+.dog-product-list .dog-product .dog-product-price,
+.cat-product-list .cat-product .cat-product-price,
+.food-product-list .food-product .food-product-price,
+.accessory-product-list .accessory-product .accessory-product-price{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.dog-product-list .dog-product .dog-product-name,
+.cat-product-list .cat-product .cat-product-name,
+.food-product-list .food-product .food-product-name,
+.accessory-product-list .accessory-product .accessory-product-name{          
+    white-space: nowrap;   
+    overflow: hidden;       
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 0 10px;
+}
+.dog-list .more-btn,
+.cat-list .more-btn,
+.food-list .more-btn,
+.accessory-list .more-btn{
+    margin: 30px auto;
+    line-height: 50px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 27px;
+    font-weight: bold;
+    background-color: #30b5b2;
+    border-radius: 4px; 
+    transition: 0.5s;
+    text-align: center;
+    
+}
+.dog-list .more-btn:hover,
+.cat-list .more-btn:hover,
+.food-list .more-btn:hover,
+.accessory-list .more-btn:hover{
+    transform: translateY(-10px);
+}
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+.banner1 img, .banner2 img{
+    width: 100%;
+    height: 400px;
+    transition: 0.5s;
+}
+.banner1, .banner2{
+    width: 50%;
+    overflow: hidden;
+
+}
+.two-banners{
+    display: flex;
+}
+.banner1:hover img, .banner2:hover img{
+    transform: scale(1.1);
+}
+/*----------------------------*/
+.news-list1{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.news1{
+    width: 25%;
+    height: 250px;
+    margin: 0 20px;
+    position: relative;
+}
+.news1:hover img{
+    transform: scale(1.1);
+}
+.news1 .img1{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+}
+.news1 .img1 img{
+    width: 100%;
+    height: 250px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.news1-desc{
+    width: 300px;
+    height: 100px;
+    background: whitesmoke;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(1px);
+    color: black;
+}
+.news1-desc h4{
+    white-space: nowrap;   
+    overflow: hidden;       
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 10px 5px;
+}
+.news1-desc p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;       
+    margin: 10px 10px;
+    font-size: 13px;
+}
+/*-------------CONTENT-----------------*/
+#content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/bg_ft.jpg);
+    object-fit: cover;
+    color: rgb(173, 166, 166);
+}
+#content .divider-content{
+    margin: 0 20px;
+    height: 300px;
+    border: 1px dashed rgb(126, 121, 121);
+}
+#content .content1,
+#content .content2,
+#content .content3{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content .content1{
+    position: relative;
+}
+#content .content1 ul{
+    margin-left: 80px;
+}
+#content .content2 div{
+    margin: 20px 10px;
+}
+#content .content2 .email-btn input{
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+#content .content2 .email-btn button{
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: #30b5b2;
+    color: white;
+
+}
+#content .content2 .email-btn button:hover{
+    background: #078785;
+}
