@@ -3,690 +3,762 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Cat Shop</title>
-    <link rel="stylesheet" href="./assets/css/petshop.css">
+    <title>Login Form HTML & CSS</title>
+    <link rel="stylesheet" href="assets/css/petshop.css">
+    <script src="./vendo/fontawesome/js/all.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <div id="wrapper">
-        <header id="header">
-            <nav id="nav">
-                <div class="nav-logo">
-                    <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#">GIỚI THIỆU</a></li>
-                    <li><a href="#dog">CHÓ CẢNH</a></li>
-                    <li><a href="#cat">MÈO CẢNH</a></li>
-                    <li><a href="#food">ĐỒ ĂN</a></li>
-                    <li><a href="#accessory">PHỤ KIỆN</a></li>
-                    <li><a href="#news">TIN TỨC</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
-                <ul class="subnav-menu">
-                    <li class="search-box"><a href="#"><i class='bx bx-search'></i></a></li>
-                    <li class="user-login"><a href="#"><i class='bx bxs-user'></i></a></li>
-                    <li class="mycart"><a href="#"><i class='bx bxs-shopping-bag'></i></a></li>
-                </ul>
-            </nav>
-            <div id="slider">
-                <div class="text-content">
-                    <div class="text-heading"><h4>CHESTER</h4></div>
-                    <div class="text-title"><h2>IS A CHAMPION DOG.</h2></div>
-                    <div class="text-desc">
-                        <p>be sure to feed him like one
-                        <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a. 
-                        <br>
-                        Aliquam condimentum mattis neque sed pretium …
-                        </p>
-                    </div>
+    <div id="main">
+        <!----Header---->
+        <div id="header" class="row">
+            <div class="header-logo">
+                <a href="#" style="width: 200px;"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+            </div>
+
+            <ul id="nav">
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">CHÓ CẢNH</a></li>
+                <li><a href="#">MÈO CẢNH</a></li>
+                <li><a href="#">ĐỒ ĂN</a></li>
+                <li><a href="#">PHỤ KIỆN</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+
+            <ul id="search-btn">
+                <li><button><i class='bx bx-search-alt'></i></button></li>
+                <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
+                <li><button><i class='bx bxs-cart-add'></i></button></li>
+            </ul>
+        </div>
+        <!----Header---->
+
+        <!----Slider---->
+        <div id="slider">
+            <div class="text-content">
+                <div class="text-title"><h3>CHESTER</h3></div>
+                <div class="text-heading"><h4>IS A CHAMPION DOG.</h4></div>
+                <div class="text-desc">
+                    <p>be sure to feed him like one
+                    <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a. 
+                    <br>
+                    Aliquam condimentum mattis neque sed pretium …
+                    </p>
                 </div>
                 <div class="buy-btn">
                     <a href="#">SHOP NOW</a>
                 </div>
             </div>
-        </header>
-        <div id="main">
-            <div class="benefit">
-                <div class="icon freeship">
+        </div>
+        <!----Slider---->
+
+        <!----Content---->
+        <div id="content">
+            <!----Benefit-section---->
+            <div class="benefit-section">
+                <div class="col">
                     <i class='bx bx-rocket'></i>
-                    <div class="text">
-                        <p><span style="font-size: 20px;font-weight: 600;">FREE SHIPPING</span>
-                        <br>
-                        <span style="font-size: 15px;">All Order Over $150</span>
+                    <div class="benefit-desc">
+                        <p><h3>FREE SHIPPING</h3>
+                        <span>All Order Over $150</span>
                         </p>
                     </div>
                 </div>
+
                 <div class="divider"></div>
-                <div class="icon discount">
+
+                <div class="col">
                     <i class='bx bxs-discount' ></i>
-                    <div class="text">
-                        <p><span style="font-size: 20px;font-weight: 600;">15% DISCOUNT</span>
-                        <br>
-                        <span style="font-size: 15px;">For First Order</span>
+                    <div class="benefit-desc">
+                        <p><h3>15% DISCOUNT</h3>
+                        <span>For First Order</span>
                         </p>
                     </div>
                 </div>
+                
                 <div class="divider"></div>
-                <div class="icon payment">
+
+                <div class="col">
                     <i class='bx bx-wallet' ></i>
-                    <div class="text">
-                        <p><span style="font-size: 20px;font-weight: 600;">SECURITY PAYMENT</span>
-                        <br>
-                        <span style="font-size: 15px;">Confirmed</span>
+                    <div class="benefit-desc">
+                        <p><h3>SECURITY PAYMENT</h3>
+                        <span>Confirmed</span>
                         </p>
                     </div>
                 </div>
+                
                 <div class="divider"></div>
-                <div class="icon gift">
+
+                <div class="col">
                     <i class='bx bx-gift' ></i>
-                    <div class="text">
-                        <p><span style="font-size: 20px;font-weight: 600;">AWESOME GIFT</span>
-                        <br>
-                        <span style="font-size: 15px;">Every Month</span>
+                    <div class="benefit-desc">
+                        <p><h3>AWESOME GIFT</h3>
+                        <span>Every Month</span>
                         </p>
                     </div>
                 </div>
             </div>
- <!------------------------------------DOG LIST----------------------->
-            <div id="dog" class="dog-list">
-                <div class="title">
-                    <p>CHÓ CẢNH</p>
+            <!----Benefit-section---->
+            <!----List 1---->
+            <div class="list-section">
+                <div class="mona-title">
+                    <h2>CHÓ CẢNH</h2>
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg" alt="" width="100" height="62">
                 </div>
-                <div class="dog-product-list">
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/10-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
+
+                <div class="list">
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/10-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ ALASKA</a>
+                                <p class="price">11,090,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ ALASKA</div>
-                            <div class="dog-product-price">11,090,000 <u>đ</u></div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-1-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ BOSTON TERRIER THUẦN CHỦNG</a>
+                                <p class="price">10,650,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/011-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ BECGIE</a>
+                                <p class="price">3,089,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ DOBERMAN PINSCHER</a>
+                                <p class="price">8,875,000 <u>đ</u></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-1-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ BOSTON TERRIER THUẦN CHỦNG</div>
-                            <div class="dog-product-price">10,650,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/011-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ BECGIE</div>
-                            <div class="dog-product-price">3,089,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ DOBERMAN PINSCHER</div>
-                            <div class="dog-product-price">8,875,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                <!------------------------------------------------------->
-                </div>
-                <div class="dog-product-list">
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/01-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>  
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ PHÚ QUỐC THUẦN CHỦNG</div>
-                            <div class="dog-product-price">5,050,000 <u>đ</u></div>
-                        </div>
-                                            
-                    </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/1-1-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ AMERICAN ESKIMO</div>
-                            <div class="dog-product-price">14,289,000 <u>đ</u></div>
-                        </div>
                     
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/01-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ PHÚ QUỐC THUẦN CHỦNG</a>
+                                <p class="price">5,050,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/1-1-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ AMERICAN ESKIMO</a>
+                                <p class="price">14,289,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/08-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ BULLDOG ANH 4 THÁNG</a>
+                                <p class="price">8,562,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/07-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">CHÓ AMERICAN BULLY</a>
+                                <p class="price">9,025,000 <u>đ</u></p>
+                            </div>  
+                        </div>
+                    </div> 
+
+                    <div class="buy-btn">
+                        <a href="#">SHOP NOW</a>
                     </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/08-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ BULLDOG ANH 4 THÁNG</div>
-                            <div class="dog-product-price">8,562,000 <u>đ</u></div>
-                        </div>
-                    
-                    </div>
-                    <div class="dog-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/07-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="dog-product-title">CHÓ CẢNH</div>
-                            <div class="dog-product-name">CHÓ AMERICAN BULLY</div>
-                            <div class="dog-product-price">9,025,000 <u>đ</u></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="more-btn">
-                    <a href="#">XEM THÊM</a>
                 </div>
             </div>
-            <!--------------------DOG AND CAT BANNER---------------------------->
+            <!----List 1---->
             <div class="banner">
-                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/30b1651227cf5a0f603dbc807056a6ce72232b1f_banner-2.jpg" alt="">
+                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/30b1651227cf5a0f603dbc807056a6ce72232b1f_banner-2.jpg" alt="Banner" width="1903">
             </div>
-            <!------------------------------------CAT LIST----------------------->
-            <div id="cat" class="cat-list">
-                <div class="title">
-                    <p>MÈO CẢNH</p>
+            <!----List 2---->
+            <div class="list-section">
+                <div class="mona-title">
+                    <h2>MÈO CẢNH</h2>
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg" alt="" width="100" height="62">
                 </div>
-                <div class="cat-product-list">
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/0010-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
+
+                <div class="list">
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/0010-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO NHÂN SƯ KHÔNG LÔNG</a>
+                                <p class="price">8,929,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO NHÂN SƯ KHÔNG LÔNG</div>
-                            <div class="cat-product-price">8,929,000 <u>đ</u></div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO MỸ TAI XOẮN</a>
+                                <p class="price">4,521,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-1-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO NGA MẮT XANH</a>
+                                <p class="price">6,897,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/7-1-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO ANH LÔNG DÀI</a>
+                                <p class="price">5,769,000 <u>đ</u></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO MỸ TAI XOẮN</div>
-                            <div class="cat-product-price">4,521,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-1-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">CHÓ NGA MẮT XANH</div>
-                            <div class="cat-product-price">6,897,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/7-1-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO ANH LÔNG DÀI</div>
-                            <div class="cat-product-price">5,769,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                <!------------------------------------------------------->
-                </div>
-                <div class="cat-product-list">
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/02-1-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>  
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO ANH LÔNG NGẮN</div>
-                            <div class="cat-product-price">8,564,000 <u>đ</u></div>
-                        </div>
-                                            
-                    </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-2-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO THỔ NHĨ KỲ TURKISH</div>
-                            <div class="cat-product-price">14,289,000 <u>đ</u></div>
-                        </div>
                     
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/02-1-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO ANH LÔNG NGẮN</a>
+                                <p class="price">8,564,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-2-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO THỔ NHĨ KỲ TURKISH</a>
+                                <p class="price">14,289,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/4-2-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO VAN THỔ - TURKISH VAN</a>
+                                <p class="price">6,582,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/002-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>MÈO CẢNH</p>
+                                <a href="#" style="color: black;">MÈO BA TƯ LÔNG NGẮN</a>
+                                <p class="price">5,589,000 <u>đ</u></p>
+                            </div>  
+                        </div>
+                    </div> 
+                       
+                    <div class="buy-btn">
+                        <a href="#">SHOP NOW</a>
                     </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/4-2-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO VAN THỔ - TURKISH VAN</div>
-                            <div class="cat-product-price">6,582,000 <u>đ</u></div>
-                        </div>
-                    
-                    </div>
-                    <div class="cat-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/002-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="cat-product-title">MÈO CẢNH</div>
-                            <div class="cat-product-name">MÈO BA TƯ LÔNG NGẮN</div>
-                            <div class="cat-product-price">5,589,000 <u>đ</u></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="more-btn">
-                    <a href="#">XEM THÊM</a>
                 </div>
             </div>
-            <!-----------------------END CAT LIST---------------------------->
-            <!-----------------------TWO BANNER---------------------------->
-            <div class="two-banners">
-                <div class="banner1">
+            <!----List 2---->
+            <div class="banner-two">
+                <div class="banner">
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-about001-1.jpg" width="1000px" height="400px" alt="">
                 </div>
-                <div class="banner2">
+                <div class="banner">
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/ECRANS-MARQUES-MS-p1413.jpg" width="1000px" height="400px" alt="">
                 </div>
             </div>
-            <!-----------------------END TWO BANNER---------------------------->
-            
-            <!-----------------------FOOD LIST---------------------------->
-            <div id="food" class="food-list">
-                <div class="title">
-                    <p>ĐỒ ĂN</p>
+            <!----List 3---->
+            <div class="list-section">
+                <div class="mona-title">
+                    <h2>ĐỒ ĂN</h2>
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg" alt="" width="100" height="62">
                 </div>
-                <div class="food-product-list">
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/06-5-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
+
+                <div class="list">
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/06-5-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO MÈO</p>
+                                <a href="#" style="color: black;">O'fresh - CAT CARE 7.2kg</a>
+                                <p class="price">550,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO MÈO</div>
-                            <div class="food-product-name">O'fresh - CAT CARE 7.2kg</div>
-                            <div class="food-product-price">550,000 <u>đ</u></div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/08-5-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO MÈO</p>
+                                <a href="#" style="color: black;">Sốt gà cá ngừ Whiskas cho mèo 85g</a>
+                                <p class="price">25,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/09-3-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO MÈO</p>
+                                <a href="#" style="color: black;">Cỏ mèo tự trồng Hagen Catit</a>
+                                <p class="price">290,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/01-3.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO MÈO</p>
+                                <a href="#" style="color: black;">Thức ăn cho mèo Cat’s Eye túi 7kg (trên 3 tháng)</a>
+                                <p class="price">682,000 <u>đ</u></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/08-5-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO MÈO</div>
-                            <div class="food-product-name">Sốt gà cá ngừ Whiskas cho mèo 85g</div>
-                            <div class="food-product-price">25,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/09-3-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO MÈO</div>
-                            <div class="food-product-name">Cỏ mèo tự trồng Hagen Catit</div>
-                            <div class="food-product-price">290,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/01-3.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO MÈO</div>
-                            <div class="food-product-name">Thức ăn cho mèo Cat’s Eye túi 7kg (trên 3 tháng)</div>
-                            <div class="food-product-price">682,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                <!------------------------------------------------------->
-                </div>
-                <div class="food-product-list">
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/3-6-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>  
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO CHÓ</div>
-                            <div class="food-product-name">Pate Monge gà 100g</div>
-                            <div class="food-product-price">45,000 <u>đ</u></div>
-                        </div>
-                                            
-                    </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-5-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO CHÓ</div>
-                            <div class="food-product-name">Xương sữa Sleeky Chews Flouride 2pcs</div>
-                            <div class="food-product-price">60,000 <u>đ</u></div>
-                        </div>
                     
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/3-6-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO CHÓ</p>
+                                <a href="#" style="color: black;">Pate Monge gà 100g</a>
+                                <p class="price">45,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-5-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO CHÓ</p>
+                                <a href="#" style="color: black;">Xương sữa Sleeky Chews Flouride 2pcs</a>
+                                <p class="price">60,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-4-300x300.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO CHÓ</p>
+                                <a href="#" style="color: black;">SY - Bánh thưởng Steamed Bread</a>
+                                <p class="price">55,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/4-7.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>ĐỒ ĂN CHO CHÓ</p>
+                                <a href="#" style="color: black;">Xương ngậm sạch răng Daily Dental Bone Jumbo Thái vị sữa</a>
+                                <p class="price">60,000 <u>đ</u></p>
+                            </div>  
+                        </div>
+                    </div> 
+                       
+                    <div class="buy-btn">
+                        <a href="#">SHOP NOW</a>
                     </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-4-300x300.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO CHÓ</div>
-                            <div class="food-product-name">SY - Bánh thưởng Steamed Bread</div>
-                            <div class="food-product-price">55,000 <u>đ</u></div>
-                        </div>
-                    
-                    </div>
-                    <div class="food-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/4-7.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="food-product-title">ĐỒ ĂN CHO CHÓ</div>
-                            <div class="food-product-name">Xương ngậm sạch răng Daily Dental Bone Jumbo Thái vị sữa</div>
-                            <div class="food-product-price">60,000 <u>đ</u></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="more-btn">
-                    <a href="#">XEM THÊM</a>
                 </div>
             </div>
-            <!-----------------------ACCESSORY LIST---------------------------->
-            <div id="accessory" class="accessory-list">
-                <div class="title">
-                    <p>PHỤ KIỆN</p>
+            <!----List 3---->
+            <!----List 4---->
+            <div class="list-section">
+                <div class="mona-title">
+                    <h2>PHỤ KIỆN</h2>
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg" alt="" width="100" height="62">
                 </div>
-                <div class="accessory-product-list">
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/11-2.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
+
+                <div class="list">
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/11-2.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Dây dắt Ferplast Ergofluo 2.5cm/120cm (xanh biển)</a>
+                                <p class="price">575,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Dây dắt Ferplast Ergofluo 2.5cm/120cm (xanh biển)</div>
-                            <div class="accessory-product-price">575,000 <u>đ</u></div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/12-2.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Dây dắt tự động Flexi New Comfort dây tròn xanh lá (3m – cho chó dưới 8kg)</a>
+                                <p class="price">452,000 <u>đ</u></p>
+                            </div>
                         </div>
-                        
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/013-1.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Lồng vận chuyển Ferplast Atlas Professional 70 (101x69x76cm)</a>
+                                <p class="price">2,458,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/14-1.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Túi Nylon Trung ( Ngựa vằn )</a>
+                                <p class="price">452,000 <u>đ</u></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/12-2.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Dây dắt tự động Flexi New Comfort dây tròn xanh lá (3m – cho chó dưới 8kg)</div>
-                            <div class="accessory-product-price">452,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/013-1.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Lồng vận chuyển Ferplast Atlas Professional 70 (101x69x76cm)</div>
-                            <div class="accessory-product-price">2,458,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/14-1.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Túi Nylon Trung ( Ngựa vằn )</div>
-                            <div class="accessory-product-price">452,000 <u>đ</u></div>
-                        </div>
-                    </div>
-                <!------------------------------------------------------->
-                </div>
-                <div class="accessory-product-list">
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/13-1.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>  
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Túi xách Pawise Voyage Travel 49x46x34cm</div>
-                            <div class="accessory-product-price">542,000 <u>đ</u></div>
-                        </div>
-                                            
-                    </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/010-2.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Vòng cổ da Ferplast Natural 2.5/37-45cm (màu đen)</div>
-                            <div class="accessory-product-price">458,000 <u>đ</u></div>
-                        </div>
                     
+                    <div class="row-list">
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/13-1.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Túi xách Pawise Voyage Travel 49x46x34cm</a>
+                                <p class="price">542,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/010-2.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Vòng cổ da Ferplast Natural 2.5/37-45cm (màu đen)</a>
+                                <p class="price">458,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/011-2.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Yếm Ferplast Ergofluo 2.5/57-65 cm (xanh biển)</a>
+                                <p class="price">685,000 <u>đ</u></p>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="anh">
+                                <a href="#">
+                                    <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/012-2.jpg" width="300" height="300" alt="">
+                                </a>
+                            </div>
+                            <div class="text-desc">
+                                <p>PHỤ KIỆN</p>
+                                <a href="#" style="color: black;">Vòng cổ da Ferplast Natural 2.5/45-53cm (màu tự nhiên)</a>
+                                <p class="price">362,000 <u>đ</u></p>
+                            </div>  
+                        </div>
+                    </div> 
+                       
+                    <div class="buy-btn">
+                        <a href="#">SHOP NOW</a>
                     </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/011-2.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Yếm Ferplast Ergofluo 2.5/57-65 cm (xanh biển)</div>
-                            <div class="accessory-product-price">685,000 <u>đ</u></div>
-                        </div>
-                    
-                    </div>
-                    <div class="accessory-product">
-                        <div class="anh">
-                            <a href="#">
-                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/012-2.jpg" width="300" height="300" alt="">
-                                <i class='icon bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <div class="accessory-product-title">PHỤ KIỆN</div>
-                            <div class="accessory-product-name">Vòng cổ da Ferplast Natural 2.5/45-53cm (màu tự nhiên)</div>
-                            <div class="accessory-product-price">362,000 <u>đ</u></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="more-btn">
-                    <a href="#">XEM THÊM</a>
                 </div>
             </div>
-            <!------------------------------------NEWS----------------------->
-            <div id="news" class="news-list">
-                <div class="title">
-                    <p>THÔNG TIN HỮU ÍCH</p>
+            <!----List 4---->
+            <!----List 5---->
+            <div id="news" class="list-section">
+                <div class="mona-title">
+                    <h2>THÔNG TIN HỮU ÍCH</h2>
                     <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg" alt="" width="100" height="62">
                 </div>
-                <div class="news-list1">
-                    <div class="news1">
-                        <a href="">
-                            <div class="img1"><img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/https_2F2Fcdn.evbuc_.com2Fimages2F351569232F1585027677272F12Foriginal.jpg"  alt=""></div>
-                            <div class="news1-desc">
-                                <h4>Aliquam placerat nisl nec imperdiet vehicula. Phasellus tempus ligula id orci finibus feugiat.</h4>
-                                <p>Kinh nghiệm nuôi chó con: Chọn chó con khỏe mạnh để nuôi Mọi người khi đi mua chó cần lưu ý, chỉ nên mua chó con từ 2 đến 2,5 tháng tuổi trở nên, như vậy mới đảm bảo về thể lực tối thiểu khi ta chăm sóc. Tốt nhất mua chó của chủ nuôi có chó mẹ ở nhà đẻ, hoặc trực tiếp nhập về có nguồn gốc, lý lịch rõ ràng. Đó là những chú chó nhanh nhẹn, khoẻ mạnh, có “sổ sức khoẻ” đi kèm dán tem các loại vaccin phòng dịch, ngày tẩy giun sán.</p>
+
+                <div class="new-list">
+                    <div class="new-col">
+                        <div class="new-img">
+                            <a href="#">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/p6_orig-1.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <div class="new-desc">
+                                <h4>Duis luctus elit nisi, et cursus magna pellentesque non.</h4>
+                                <p>Chế độ ăn cho chó con Chó con từ 2 tháng tuổi đến 6 tháng tuổi cho ăn 3 bữa một ngày, thời gian chia đều trong ngày cho hợp lý. Các bữa ăn cần có một khoảng thời gian nhất định để cho chó tiêu hóa hết thức ăn (Không nhất thiết người ăn lúc nào thì cho chó ăn lúc đó, sẽ không hợp lý về thời gian).</p>
+                                <a class="link-new" href="#">XEM THÊM</a>
                             </div>
                         </a>
                     </div>
-                    <div class="news1">
-                        <a href="">
-                            <div class="img1"><img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-about001.jpg"  alt=""></div>
-                            <div class="news1-desc">
+
+                    <div class="new-col">
+                        <div class="new-img">
+                            <a href="#">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-about001.jpg"  alt="">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <div class="new-desc">
                                 <h4>Mauris tristique pretium tempus. Vestibulum et accumsan magna.</h4>
                                 <p>Tuổi thọ trung bình của mèo nếu sống trong nhà là 13 năm. Nhưng nếu mèo sống thả rông bên ngoài nhà thì tuổi thọ bị giảm mất 3 năm so với mèo sống trong nhà. Vì khi sống bên ngoài, chúng thường gặp phải các mối nguy hiểm hay bất lợi khác như môi trường ô nhiễm, có thể bị xe chẹt, bị chó hoặc các động vật hoang dã hay lũ mèo “du côn” khác bắt nạt và tấn công. Tất cả các yếu tố trên đều tiềm ẩn những nguy cơ gây bệnh và những rủi ro dẫn đến tử vong cho mèo.</p>
+                                <a class="link-new" href="#">XEM THÊM</a>
                             </div>
                         </a>
                     </div>
-                    <div class="news1">
-                        <a href="">
-                            <div class="img1"><img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/p6_orig-1.png"  alt=""></div>
-                            <div class="news1-desc">
-                                <h4>Duis luctus elit nisi, et cursus magna pellentesque non.</h4>
-                                <p>Chế độ ăn cho chó con Chó con từ 2 tháng tuổi đến 6 tháng tuổi cho ăn 3 bữa một ngày, thời gian chia đều trong ngày cho hợp lý. Các bữa ăn cần có một khoảng thời gian nhất định để cho chó tiêu hóa hết thức ăn (Không nhất thiết người ăn lúc nào thì cho chó ăn lúc đó, sẽ không hợp lý về thời gian).</p>                            </div>
+
+                    <div class="new-col">
+                        <div class="new-img">
+                            <a href="#">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/https_2F2Fcdn.evbuc_.com2Fimages2F351569232F1585027677272F12Foriginal.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <div class="new-desc">
+                                <h4>Aliquam placerat nisl nec imperdiet vehicula. Phasellus tempus ligula id orci finibus feugiat.</h4>
+                                <p>Mọi người khi đi mua chó cần lưu ý, chỉ nên mua chó con từ 2 đến 2,5 tháng tuổi trở nên, như vậy mới đảm bảo về thể lực tối thiểu khi ta chăm sóc. Tốt nhất mua chó của chủ nuôi có chó mẹ ở nhà đẻ, hoặc trực tiếp nhập về có nguồn gốc, lý lịch rõ ràng. Đó là những chú chó nhanh nhẹn, khoẻ mạnh, có “sổ sức khoẻ” đi kèm dán tem các loại vaccin phòng dịch, ngày tẩy giun sán.</p>
+                                <a class="link-new" href="#">XEM THÊM</a>
+                            </div>
                         </a>
                     </div>
                 </div>
-            </div>   
+                <div class="buy-btn more">
+                    <a href="#">XEM THÊM</a>
+                </div>
+            </div>
+            <!----List 5---->
+            <div class="about-section">
+                <div class="col col-left">
+                    <h4>ĐIỀU HƯỚNG</h4>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Chó cảnh</a></li>
+                        <li><a href="#">Mèo cảnh</a></li>
+                        <li><a href="#">Đồ ăn</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="divider-about"></div>
+                <div class="col col-mid">
+                    <div class="logo-about">
+                        <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                        
+                    </div>
+                    <form action="">
+                        <input class="text" type="text" name="" id="" placeholder="Email ..." required>
+                        <input class="btn-input" type="submit" value="GỬI">
+                    </form>
+                </div>
+                <div class="divider-about"></div>
+                <div class="col col-right">
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                    <ul>
+                        <li><i class='bx bxs-map'></i> 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                        <li><i class='bx bxs-phone-call'></i> 0387455830</li>
+                        <li><i class='bx bxs-envelope' ></i>lddanh92tcv2017@gmail.com</li>
+                        <li><i class='bx bxl-facebook'></i><a href="https://www.facebook.com/duyanhdeptraiqua"></a>Le Duc Duy Anh</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <content id="content">
-            <div class="content1">
-                <h3>ĐIỀU HƯỚNG</h3>
-                <ul>
-                    <li>Trang chủ</li>
-                    <li>Về chúng tôi</li>
-                    <li>Chó cảnh</li>
-                    <li>Mèo cảnh</li>
-                    <li>Đồ ăn</li>
-                    <li>Phụ kiện</li>
-                    <li>Điểm tin hữu ích</li>
-                    <li>Liên hệ</li>
-                </ul>
-            </div>
-            <div class="divider-content"></div>
-            <div class="content2">
-                <div class="logo-content">
-                    <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+        <!----Content---->
+        <div id="footer">
+            <div class="copyright">
+                © All rights reserved. Thiết kế website by Lê Đức Duy Anh.</div>
+        </div>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-header">
+                    <p>ĐĂNG NHẬP</p>
                 </div>
-                <div class="text-content">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                <div class="modal-body">
+                    <label for="quantity" class="modal-label">
+                        Tên tài khoản hoặc địa chỉ email *
+                    </label>
+                    <input id="quantity" type="text" class="modal-input" placeholder="duyanh2104 or abc@gmail.com">
+                
+                    <label for="email" class="modal-label">
+                        Mật khẩu *
+                    </label>
+                    <input id="password" type="password" class="modal-input" placeholder="************">
+                    
+                    <div class="login-btn">
+                        <button class="buy-btn">
+                            ĐĂNG NHẬP
+                        </button>
+                    </div>
                 </div>
-                <div class="email-btn">
-                    <input type="text" id="email" placeholder="Email">
-                    <label for="email"><button>GỬI</button></label>
+                <div class="modal-footer">
+                    <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                    <p class="modal-help">Need <a style="color: ;" href="#">help?</a></p>
                 </div>
             </div>
-            <div class="divider-content"></div>
-            <div class="content3">
-                <h3>THÔNG TIN LIÊN HỆ</h3>
-                <ul class="contact">
-                    <li><i class='bx bxs-map'></i> 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
-                    <li><i class='bx bxs-phone-call' ></i> 0387455830</li>
-                    <li><i class='bx bxs-envelope' ></i> lddanh92tcv2017@gmail.com</li>
-                    <li><a style="color: rgb(173, 166, 166);" href="https://www.facebook.com/duyanhdeptraiqua"><i class='bx bxl-facebook'> Le Duc Duy Anh</i></a></li>
-                </ul>
-            </div>
-        </content>  
+        </div>
     </div>
-
     <script>
         window.onscroll = function() {changeHeader()};
         function changeHeader() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("nav").style.backgroundColor = "#353535";
+            document.getElementById("header").style.backgroundColor = "#353535";
         } else {
-            document.getElementById("nav").style.backgroundColor = "transparent";
+            document.getElementById("header").style.backgroundColor = "transparent";
         }
         }
 
+        const buyBtn = document.querySelector('.js-user')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+
+        function showBuyTicket(){
+            modal.classList.add('open')
+        }
+
+        function hideBuyTicket(){
+            modal.classList.remove('open')
+        }
+
+
+        buyBtn.addEventListener('click', showBuyTicket)
+        modal.addEventListener('click', hideBuyTicket)
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
         
     </script>
 </body>

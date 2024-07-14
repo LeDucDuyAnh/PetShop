@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +6,23 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/*Chung*/
+ul li{
+    list-style: none;
+}
+a{
+    color: #FFFFFFCC ;
+    text-decoration: none;
+}
+.row{
+    padding: 0 20px;
+}
+
+/*Header*/
 #header{
-    position: relative;
-    color: white;
-    width: 100%;
-    height: 760px;
-    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/slider-111.jpg) top center/cover no-repeat;
-}
-#nav{
+    background-color: transparent;
     width: 100%;
     height: 70px;
     display: flex;
@@ -24,386 +30,454 @@ body{
     align-items: center;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
-    z-index: 2;
-    transition: 0.5s;
+    z-index: 1;
 }
-a{
-    text-decoration: none;
-    color: white;
+
+#nav{
+    display: inline-block;
 }
-#nav .nav-logo{
-    margin-left: 150px;
-}
-#nav .subnav-menu{
-    margin-right: 150px;
-}
-#nav .nav-menu, .subnav-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#nav ul li{
-    list-style-type: none;
-}
-#nav .nav-menu li{
-    height: 70px;
-    text-align: center;
+#header-logo {
     line-height: 70px;
 }
-#nav .subnav-menu i{
-    font-size: 20px;
-}
-#nav ul li a{
+
+#nav li{
+    display: inline-block;
+    line-height: 70px;
     padding: 0 20px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px
+}
+#nav li a{
     font-weight: 600;
-    display: block;
 }
-#nav .nav-menu li:hover{
-    background-color: #30b5b2;
+#nav li:hover{
+    cursor: pointer;
+    background: #30b5b2;
 }
-#nav .subnav-menu li:hover > a  {
+#search-btn li{
+    display: inline-block;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 0 15px;
+}
+#search-btn li i{
+    font-size: 25px;
+}
+#search-btn button{
+    color: #FFFFFFCC ;
+    background: none;
+    border: none;
+    outline: none;
+}
+#search-btn li button:hover{
+    color: #fff;
+}
+
+/*Slider*/
+#slider{
+    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/slider-111.jpg) top center/cover no-repeat;
+    position: relative;
     color: white;
+    width: 100%;
+    height: 760px;
+    padding-top: 50%;
 }
-/*PHẦN SLIDER*/
-#slider {
-    color: white;
+
+#slider .text-content{
     position: absolute;
-    left: 150px;
-    top: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
 }
-#slider .text-heading{
+
+.text-content .text-title{
     font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 18px 0;
 }
-#slider .text-title{
-    font-size: 45px;
-    margin-top: 10px;
-    margin-bottom: 25px;
+
+.text-content .text-heading{
+    font-size: 58px;
+    margin: 18px 0;
 }
-#slider .text-desc p:nth-child(1){
-    margin-bottom: 15px;
+
+.text-content .text-desc p{
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.4;
 }
-#slider .buy-btn{
+
+.buy-btn{
     margin: 15px 0;
     line-height: 50px;
     width: 170px;
     height: 50px;
     font-size: 20px;
-    padding: 0 27px;
+    text-align: center;
     font-weight: bold;
     background-color: #30b5b2;
     border-radius: 4px;
     transition: 0.5s;
+    border: none;
+    outline: none;
+    color: #FFF;
 }
-#slider a{
-    text-decoration: none;
-    color: white;
-}
-#slider .buy-btn:hover{
+
+.buy-btn:hover{
     transform: translateY(-10px);
+    background-color: #0bdcd8;
 }
-/* PHẦN MAIN */
-#main .benefit{
+
+/*Content*/
+#content .benefit-section{
     width: 100%;
     height: 100px;
-    padding: 30px 0;
+    padding: 30px 20px;
     background-color: #30b5b2;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-#main .benefit .icon{
+
+.benefit-section .col{
+    width: 25%;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#main .benefit .icon i{
-    font-size: 50px;
-    margin: 0 20px;
+
+.col .benefit-desc{
+    padding: 0 0 0 16px;
+}
+.col span{
+    font-size: 14px;
 }
 
-#main .benefit .divider{
-    margin: 0 30px;
+.col i{
+    font-size: 50px;
+}
+
+.benefit-section .divider{
     height: 60px;
     border: 1px dashed rgb(199, 193, 193);
+    margin-right: 0;
 }
-#main .dog-list .title,
-#main .cat-list .title,
-#main .food-list .title,
-#main .accessory-list .title,
-#main .news-list .title{
-    margin: 80px 0;
+/*List*/
+.list-section{
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 60px;
 }
-#main .dog-list .title p,
-#main .cat-list .title p,
-#main .food-list .title p,
-#main .accessory-list .title p,
-#main .news-list .title p{
+.list-section .mona-title{
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.list-section .mona-title h2{
     font-size: 30px;
-    font-weight: 600;
-    color: #3c3451;
+    color: #3C3431;
 }
-/*Danh sách các loại chó cảnh*/
 
-.dog-list .dog-product-list,
-.cat-list .cat-product-list,
-.food-list .food-product-list,
-.accessory-list .accessory-product-list {
+.row-list{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    position: relative;
+    margin: 15px 0;
 }
-.dog-list .dog-product-list .dog-product, 
-.cat-list .cat-product-list .cat-product,
-.food-list .food-product-list .food-product,
-.accessory-list .accessory-product-list .accessory-product {
+.row-list .col{
     width: 300px;
     height: 400px;
-    background-color: whitesmoke;
     text-align: center;
-    margin: 0 10px;
-}
-.dog-list .dog-product-list .dog-product,
-.cat-list .cat-product-list .cat-product,
-.food-list .food-product-list .food-product,
-.accessory-list .accessory-product-list .accessory-product {
-    position: relative;
-}
-.dog-list .dog-product-list .dog-product .anh,
-.cat-list .cat-product-list .cat-product .anh,
-.food-list .food-product-list .food-product .anh,
-.accessory-list .accessory-product-list .accessory-product .anh {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-.dog-list .dog-product-list .dog-product .icon,
-.cat-list .cat-product-list .cat-product .icon,
-.food-list .food-product-list .food-product .icon,
-.accessory-list .accessory-product-list .accessory-product .icon {
-    opacity: 0;
-    color: #297472;
-    font-size: 40px;
-    position: absolute;
-    bottom: 70px;
-    left: 10px;
-    transition: 0.5s;
-}
-.dog-list .dog-product-list .anh:hover .icon,
-.cat-list .cat-product-list .anh:hover .icon,
-.food-list .food-product-list .anh:hover .icon,
-.accessory-list .accessory-product-list .anh:hover .icon{
-    opacity: 1;
-    transform: translateY(-30px);
+    margin: 0 15px 30px;
 }
 
-.dog-list .dog-product-list .anh:hover img,
-.cat-list .cat-product-list .anh:hover img,
-.food-list .food-product-list .anh:hover img,
-.accessory-list .accessory-product-list .anh:hover img {
-    transform: scale(1.1);
-}
-.dog-list .dog-product-list .dog-product .anh img,
-.cat-list .cat-product-list .cat-product .anh img,
-.food-list .food-product-list .food-product .anh img,
-.accessory-list .accessory-product-list .accessory-product .anh img{
-    transition: 0.5s;
-}
-
-.dog-product-list .dog-product .dog-product-title,
-.cat-product-list .cat-product .cat-product-title,
-.food-product-list .food-product .food-product-title,
-.accessory-product-list .accessory-product .accessory-product-title{
-    margin-top: 12px;
-    font-size: 10px;
-    color:  rgb(140, 133, 133);
-}
-.dog-product-list .dog-product .dog-product-price,
-.cat-product-list .cat-product .cat-product-price,
-.food-product-list .food-product .food-product-price,
-.accessory-product-list .accessory-product .accessory-product-price{
-    font-size: 15px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-.dog-product-list .dog-product .dog-product-name,
-.cat-product-list .cat-product .cat-product-name,
-.food-product-list .food-product .food-product-name,
-.accessory-product-list .accessory-product .accessory-product-name{          
+.col .text-desc{
+    background-color: whitesmoke;
+    padding: 10px 15px 30px;
     white-space: nowrap;   
     overflow: hidden;       
     text-overflow: ellipsis;
-    text-align: center;
-    margin: 0 10px;
 }
-.dog-list .more-btn,
-.cat-list .more-btn,
-.food-list .more-btn,
-.accessory-list .more-btn{
-    margin: 30px auto;
-    line-height: 50px;
-    width: 170px;
-    height: 50px;
-    font-size: 20px;
-    padding: 0 27px;
-    font-weight: bold;
-    background-color: #30b5b2;
-    border-radius: 4px; 
-    transition: 0.5s;
-    text-align: center;
-    
-}
-.dog-list .more-btn:hover,
-.cat-list .more-btn:hover,
-.food-list .more-btn:hover,
-.accessory-list .more-btn:hover{
-    transform: translateY(-10px);
-}
-.banner img{
-    object-fit: cover;
-    width: 100%;
-    height: 450px;
-}
-.banner1 img, .banner2 img{
-    width: 100%;
-    height: 400px;
-    transition: 0.5s;
-}
-.banner1, .banner2{
-    width: 50%;
-    overflow: hidden;
+.text-desc p{
+    font-size: 10px;
+    padding-top: 10px;
+    line-height: 1.6;
 
 }
-.two-banners{
-    display: flex;
+.text-desc .price{
+    font-size: 15px;
+    padding-top: 15px;
 }
-.banner1:hover img, .banner2:hover img{
+.col .anh{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.col .anh:hover img{
     transform: scale(1.1);
 }
-/*----------------------------*/
-.news-list1{
+.anh img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .5s ease;
+}
+
+.list-section .buy-btn{
+    margin: 20px auto;
+}
+/*Banner*/
+.banner-two{
+    width: 100%;
+    display: flex;
+}
+.banner img{
+    width: 100%;
+    transition: .5s ease;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+.banner:hover img{
+    transform: scale(1.1);
+}
+
+/*Tin tức*/
+#news{
+    background-color: whitesmoke;
+    padding: 15px 0;
+}
+.new-list{
     width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    align-items: center;
 }
-.news1{
+.new-col{
     width: 25%;
     height: 250px;
     margin: 0 20px;
     position: relative;
 }
-.news1:hover img{
-    transform: scale(1.1);
-}
-.news1 .img1{
+.new-img{
     width: 100%;
     height: 250px;
     overflow: hidden;
-    
 }
-.news1 .img1 img{
+.new-img img{
     width: 100%;
     height: 250px;
-    transition: 0.5s;
     object-fit: cover;
+    transition: .5s ease;
 }
-.news1-desc{
+.new-img:hover img{
+    transform: scale(1.1);
+}
+.new-desc{
     width: 300px;
-    height: 100px;
-    background: whitesmoke;
+    height: 120px;
+    background: white;
     position: absolute;
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
-    backdrop-filter: blur(1px);
     color: black;
+    line-height: 1.6;
 }
-.news1-desc h4{
+.new-desc h4{
+    color: #1C1C1C;
     white-space: nowrap;   
     overflow: hidden;       
     text-overflow: ellipsis;
     text-align: center;
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
-.news1-desc p{
+.new-desc p{
+    color: #767676;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
     -webkit-box-orient: vertical;  
     overflow: hidden;       
-    margin: 10px 10px;
+    margin: 0 10px;
     font-size: 13px;
 }
-/*-------------CONTENT-----------------*/
-#content{
+.buy-btn.more{
+    margin-top: 70px;
+}
+.new-desc .link-new{
+    margin: 30px 10px 0;
+    color: #E8598F;
+    font-size: 12px;
+    font-weight: 600;
+}
+.new-desc .link-new:hover{
+    color: red;
+}
+/*About section*/
+.about-section{
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/bg_ft.jpg);
+
     object-fit: cover;
     color: rgb(173, 166, 166);
+    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/bg_ft.jpg) top center/cover no-repeat;
+    line-height: 2;
+    padding: 60px 0 30px;
 }
-#content .divider-content{
-    margin: 0 20px;
+
+.divider-about{
     height: 300px;
-    border: 1px dashed rgb(126, 121, 121);
+    border: 1px dashed rgb(199, 193, 193);
+    margin: 0 30px;
 }
-#content .content1,
-#content .content2,
-#content .content3{
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.col h4{
+    color: #fff;
 }
-#content .content1{
+.col-left{
     position: relative;
+    width: 25%;
 }
-#content .content1 ul{
-    margin-left: 80px;
+.col-left ul{
+    position: absolute;
+    left: 30px;
 }
-#content .content2 div{
-    margin: 20px 10px;
+.col-left ul li:hover a{
+    color: #fff;
 }
-#content .content2 .email-btn input{
-    width: 300px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    padding: 10px;
+
+.col-right{
+    width: 25%;
+    text-align: left;
+    font-size: 15px;
+    line-height: 2;
 }
-#content .content2 .email-btn button{
-    width: 50px;
-    height: 30px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    text-align: center;
-    background: #30b5b2;
-    color: white;
+.col-right ul li i{
+    font-size: 20px;
 
 }
-#content .content2 .email-btn button:hover{
-    background: #078785;
+
+.col-mid{
+    text-align: center;
+    width: 40%;
+}
+.col-mid .text{
+    width: 300px;
+    height: 45px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+form{
+    padding-top: 40px;
+}
+.col-mid .btn-input{
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #30b5b2;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+.col-mid .btn-input:hover{
+    cursor: pointer;
+    background-color: #0bdcd8;
+}
+
+/*Footer*/
+#footer{
+    text-align: center;
+    background-color: #000;
+    padding: 10px 15px;
+}
+.copyright{
+    color: #3C3431;
+}
+
+/*Modal*/
+.modal.open {
+    display: flex;  
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    z-index: 2;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 300px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease .5s;
+}
+.modal-header{
+    background: #009688;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #c7c3c3;
+    width: 100%;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.modal-input:focus{
+    border: none;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.modal-body .login-btn{
+    text-align: center;
+}
+.modal-footer{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-footer a{
+    text-decoration: underline;
+    color: #2196f3;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
