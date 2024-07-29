@@ -7,6 +7,7 @@ body{
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 /*Chung*/
 ul li{
@@ -16,13 +17,9 @@ a{
     color: #FFFFFFCC;
     text-decoration: none;
 }
-.row{
-    padding: 0 20px;
-}
-
 /*Header*/
 #header{
-    background-color: transparent;
+    background-color: #353535;
     width: 100%;
     height: 70px;
     display: flex;
@@ -37,7 +34,7 @@ a{
 }
 
 #nav{
-    display: inline-block;
+    display: flex;
 }
 #header-logo {
     line-height: 70px;
@@ -122,251 +119,83 @@ li:hover > .sub-menu{
 #search-btn li:first-child:hover .find{
     display: block;
 }
-
-/*Slider*/
-#slider{
-    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/slider-111.jpg) top center/cover no-repeat;
-    position: relative;
+/*Content*/
+#content{
+    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/03/unsplash18-4-of-5.jpg) top center/cover no-repeat;
+    position: relative;;
+    min-height: 900px;
+    padding-top: 120px;
+    line-height: 1.6rem;
+}
+.contact-content{
+    width: 1200px;
+    margin: 70px auto;
     color: white;
-    width: 100%;
-    height: 760px;
-    padding-top: 50%;
+    display: flex;
 }
-
-#slider .text-content{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100px;
-}
-
-.text-content .text-title{
-    font-size: 30px;
-    margin: 18px 0;
-}
-
-.text-content .text-heading{
-    font-size: 58px;
-    margin: 18px 0;
-}
-
-.text-content .text-desc p{
-    font-size: 20px;
-    margin: 20px 0;
-    line-height: 1.4;
-}
-
-.buy-btn{
-    margin: 15px 0;
-    line-height: 50px;
-    width: 170px;
-    height: 50px;
-    font-size: 20px;
+.contact-content .title{
     text-align: center;
-    font-weight: bold;
-    background-color: #30b5b2;
-    border-radius: 4px;
-    transition: 0.5s;
+    padding-bottom: 40px;
+}
+.about{
+    background-color:rgba(52, 74, 95, 0.74);
+    padding-top: 60px;
+}
+.about p{
+    margin-bottom: 25px;
+}
+.column{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+
+}
+
+.contact-form{
+    padding-top: 120px;
+}
+.contact-form{
+    background: rgba(255, 255, 255, 0.74);
+}
+.column-half{
+    width: 50%;
+}
+.inf{
+    width: 100%;
+    display: flex;
+}
+.inf input{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+.mess{
+    width: 98%;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 10px;
+    height: 100px;
+}
+.contact-content input{
+    border: 1px solid #c7c3c3;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.contact-content input:focus{
     border: none;
     outline: none;
-    color: #FFF;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-.buy-btn:hover{
-    transform: translateY(-10px);
-    background-color: #0bdcd8;
-}
-
-/*Content*/
-#content .benefit-section{
-    width: 100%;
-    height: 100px;
-    padding: 30px 20px;
-    background-color: #30b5b2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.benefit-section .col{
-    width: 25%;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col .benefit-desc{
-    padding: 0 0 0 16px;
-}
-.col span{
-    font-size: 14px;
-}
-
-.col i{
-    font-size: 50px;
-}
-
-.benefit-section .divider{
-    height: 60px;
-    border: 1px dashed rgb(199, 193, 193);
-    margin-right: 0;
-}
-/*List*/
-.list-section{
-    width: 100%;
-    margin-top: 60px;
-}
-.list-section .mona-title{
+.submit {
     text-align: center;
-    line-height: 1.6;
-    margin-bottom: 50px;
 }
-.list-section .mona-title h2{
-    font-size: 30px;
-    color: #3C3431;
-}
-
-.row-list{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0;
-}
-.row-list .col{
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    margin: 0 15px 30px;
+.submit input{
+    width: 150px;
+    background: #30b5b2;
+    color: #fff;
 }
 
-.col .text-desc{
-    background-color: whitesmoke;
-    padding: 10px 15px 30px;
-    white-space: nowrap;   
-    overflow: hidden;       
-    text-overflow: ellipsis;
-}
-.text-desc p{
-    font-size: 10px;
-    padding-top: 10px;
-    line-height: 1.6;
-
-}
-.text-desc .price{
-    font-size: 15px;
-    padding-top: 15px;
-}
-.col .anh{
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-.col .anh:hover img{
-    transform: scale(1.1);
-}
-.anh img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: .5s ease;
-}
-
-.list-section .buy-btn{
-    margin: 20px auto;
-}
-/*Banner*/
-.banner-two{
-    width: 100%;
-    display: flex;
-}
-.banner img{
-    width: 100%;
-    transition: .5s ease;
-}
-.banner{
-    width: 100%;
-    overflow: hidden;
-}
-.banner:hover img{
-    transform: scale(1.1);
-}
-
-/*Tin tức*/
-#news{
-    background-color: whitesmoke;
-    padding: 15px 0;
-}
-.new-list{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.new-col{
-    width: 25%;
-    height: 250px;
-    margin: 0 20px;
-    position: relative;
-}
-.new-img{
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-.new-img img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: .5s ease;
-}
-.new-img:hover img{
-    transform: scale(1.1);
-}
-.new-desc{
-    width: 300px;
-    height: 120px;
-    background: white;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    line-height: 1.6;
-}
-.new-desc h4{
-    color: #1C1C1C;
-    white-space: nowrap;   
-    overflow: hidden;       
-    text-overflow: ellipsis;
-    text-align: center;
-    margin: 10px 10px;
-}
-.new-desc p{
-    color: #767676;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
-    -webkit-box-orient: vertical;  
-    overflow: hidden;       
-    margin: 0 10px;
-    font-size: 13px;
-}
-.buy-btn.more{
-    margin-top: 70px;
-}
-.new-desc .link-new{
-    margin: 30px 10px 0;
-    color: #E8598F;
-    font-size: 12px;
-    font-weight: 600;
-}
-.new-desc .link-new:hover{
-    color: red;
-}
 /*About section*/
 .about-section{
     width: 100%;
@@ -452,6 +281,7 @@ form{
     color: #3C3431;
 }
 
+
 /*Modal*/
 .modal.open {
     display: flex;  
@@ -507,6 +337,7 @@ form{
     font-size: 30px;
     color: #fff;
 }
+
 .modal-body{
     padding: 0 16px;
 }
@@ -527,6 +358,25 @@ form{
     outline: none;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+.buy-btn{
+    margin: 15px 0;
+    line-height: 50px;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #30b5b2;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: none;
+    outline: none;
+    color: #FFF;
+}
+.buy-btn:hover{
+    transform: translateY(-10px);
+    background-color: #0bdcd8;
+}   
 .modal-body .login-btn{
     text-align: center;
 }

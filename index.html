@@ -14,21 +14,31 @@
         <!----Header---->
         <div id="header" class="row">
             <div class="header-logo">
-                <a href="#" style="width: 200px;"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
             </div>
 
             <ul id="nav">
-                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
                 <li><a href="#">CHÓ CẢNH</a></li>
                 <li><a href="#">MÈO CẢNH</a></li>
-                <li><a href="#">ĐỒ ĂN</a></li>
+                <li><a href="#">ĐỒ ĂN</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">ĐỒ ĂN CHO CHÓ</a></li>
+                        <li><a href="#">ĐỒ ĂN CHO MÈO</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">PHỤ KIỆN</a></li>
                 <li><a href="#">TIN TỨC</a></li>
-                <li><a href="#">LIÊN HỆ</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
             </ul>
 
             <ul id="search-btn">
-                <li><button><i class='bx bx-search-alt'></i></button></li>
+                <li><button><i class='bx bx-search-alt'></i></button>
+                    <div class="find">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <a href=""><i class='bx bx-search-alt'></i></a>
+                    </div>
+                </li>
                 <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
                 <li><button><i class='bx bxs-cart-add'></i></button></li>
             </ul>
@@ -700,50 +710,100 @@
         <div id="footer">
             <div class="copyright">
                 © All rights reserved. Thiết kế website by Lê Đức Duy Anh.</div>
-        </div>
-        <div class="modal js-modal">
-            <div class="modal-container js-modal-container">
+        </div> 
+    </div>
+    <!--Modal người dùng-->
+    <div class="modal js-modal">
+        <div class="form-box">
+            <div class="modal-container js-modal-container login-container" id="login">
                 <div class="modal-header">
-                    <p>ĐĂNG NHẬP</p>
+                    <h3>ĐĂNG NHẬP   </h3>
                 </div>
                 <div class="modal-body">
-                    <label for="quantity" class="modal-label">
-                        Tên tài khoản hoặc địa chỉ email *
-                    </label>
-                    <input id="quantity" type="text" class="modal-input" placeholder="duyanh2104 or abc@gmail.com">
-                
-                    <label for="email" class="modal-label">
-                        Mật khẩu *
-                    </label>
-                    <input id="password" type="password" class="modal-input" placeholder="************">
+                    <form action="">
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com" required>
                     
-                    <div class="login-btn">
-                        <button class="buy-btn">
-                            ĐĂNG NHẬP
-                        </button>
-                    </div>
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************" required>
+                        
+                        <input type="checkbox" name="" id="remember-password">
+                        <label for="remember-password">Nhớ mật khẩu</label>
+
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG NHẬP">
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
-                    <p class="modal-help">Need <a style="color: ;" href="#">help?</a></p>
+                    <p>Bạn chưa có tài khoản? <a class="js-link" href="#" onclick="register()">Đăng ký</a></p>
+                    <a href="#" style="text-decoration:none;">Quên mật khẩu?</a>
+                </div>
+            </div>
+
+            <div class="modal-container js-modal-container register-container" id="register">
+                <div class="modal-header">
+                    <p>ĐĂNG KÝ</p>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="two-forms">
+                            <div class="name" style="padding-right: 10px;">
+                                <label for="lastname" class="modal-label">
+                                    <b>Họ *</b>
+                                </label>
+                                <input id="lastname" type="text" class="modal-input" placeholder="Nguyễn">
+                            </div>
+                            <div class="name">
+                                <label for="firstname" class="modal-label">
+                                    <b>Tên *</b>
+                                </label>
+                                <input id="firstname" type="text" class="modal-input" placeholder="Văn A">
+                            </div>
+                        </div>
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com">
+                    
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************">
+                        
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG KÝ">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Bạn đã có tài khoản? <a class="js-link" href="#" onclick="login()">Đăng nhập</a></p>
+                    <p class="modal-help">Need <a href="#">help?</a></p>
                 </div>
             </div>
         </div>
     </div>
     <script>
+        /* Cuộn lên cuộn xuống */
         window.onscroll = function() {changeHeader()};
         function changeHeader() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("header").style.backgroundColor = "#353535";
+            document.getElementById("header").style.transition = ".5s";
         } else {
             document.getElementById("header").style.backgroundColor = "transparent";
+            }
         }
-        }
-
+        
+        /* Modal đăng nhập */
         const buyBtn = document.querySelector('.js-user')
         const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-
+        const modalContainerS = document.querySelectorAll('.js-modal-container')
+        const links = document.querySelectorAll('.js-link')
 
         function showBuyTicket(){
             modal.classList.add('open')
@@ -756,10 +816,27 @@
 
         buyBtn.addEventListener('click', showBuyTicket)
         modal.addEventListener('click', hideBuyTicket)
-        modalContainer.addEventListener('click', function(event){
+        for(const modalContainer of modalContainerS){
+            modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+        }
         
+
+        for(const link of links){
+            link.addEventListener('click', showBuyTicket)
+        }
+        /*Lướt trái lướt phải của Đăng Ký và Đăng Nhập*/
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        function login(){
+            x.style.left = "0px";
+            y.style.right = "-950px";
+        }
+        function register(){
+            x.style.left = "-950px";
+            y.style.right = "0px";
+        }
     </script>
 </body>
 </html>
