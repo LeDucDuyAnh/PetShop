@@ -7,6 +7,7 @@ body{
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 /*Chung*/
 ul li{
@@ -16,7 +17,6 @@ a{
     color: #FFFFFFCC;
     text-decoration: none;
 }
-
 .list{
     max-width: 1200px;
     margin: 0 auto;
@@ -25,8 +25,6 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 /*Header*/
 #header{
     background-color: transparent;
@@ -38,17 +36,18 @@ a{
     right: 0;
     bottom: 0;
     z-index: 1;
+    background-color: #353535;
 }
 
 .nav-menu{
     display: flex;
 }
 
-.nav-menu li{
+
+#nav li{
     display: inline-block;
     line-height: 70px;
     font-size: 15px;
-
 }
 .sub-menu{
     position: absolute;
@@ -103,6 +102,7 @@ li:hover > .sub-menu{
     cursor: pointer;
     color: #fff;
 }
+
 #search-btn li:first-child{
     position: relative;
 }
@@ -135,136 +135,104 @@ li:hover > .sub-menu{
 #search-btn li:first-child:hover .find{
     display: block;
 }
-
-/*Slider*/
-#slider{
-    background: url(https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/slider-111.jpg) top center/cover no-repeat;
-    color: white;
-    width: 100%;
-    height: 760px;
-}
-
-#slider .text-content{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 200px;
-}
-
-.text-content .text-title{
-    font-size: 30px;
-
-}
-
-.text-content .text-heading{
-    font-size: 58px;
-    margin: 18px 0;
-}
-
-.text-content .text-desc p{
-    font-size: 20px;
-    margin: 20px 0;
-    line-height: 1.4;
-}
-
-.buy-btn{
-    margin: 15px 0;
-    line-height: 50px;
-    width: 170px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    background-color: #30b5b2;
-    border-radius: 4px;
-    transition: 0.5s;
-    border: none;
-    outline: none;
-    color: #FFF;
-}
-
-.buy-btn:hover{
-    transform: translateY(-10px);
-    background-color: #0bdcd8;
-}
-
 /*Content*/
-#content .benefit-section{
+#content{
     width: 100%;
-    padding: 30px 20px;
-    background-color: #30b5b2;
+    margin-top: 50px;
+}
+.content-section{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content-section .title-page{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: white;
+    padding: 20px 15px 0;
+    font-size: 18px;
+}
+.title a{
+    color: rgba(102, 102, 102, 0.7);
+}
+.title select{
+    margin: 0 10px;
+    padding: 10px 5px;
+    font-size: 15px;
+    box-shadow: inset 0 -1.4em 1em 0 rgba(0, 0, 0, 0.02);
+    outline: none;
 }
 
-.benefit-section .col{
+/*-----------------*/
+
+.divider{
+    border: 2px solid rgba(226, 209, 209, 0.7);
     width: 100%;
-    max-width: 25%;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 30px;
+    margin: 1em 0 1em;
 }
-
-.col .benefit-desc{
-    padding: 0 0 0 16px;
+.hang{
+    padding: 30px 0 30px;
 }
-.col span{
-    font-size: 14px;
-}
-
-.col i{
-    font-size: 50px;
-}
-
-.benefit-section .divider{
-    height: 60px;
-    border: 1px dashed rgb(199, 193, 193);
-
-}
-/*List*/
-.list-section{
-    width: 100%;
-    margin-top: 60px;
-}
-
-
-.list-section .mona-title{
-    line-height: 1.6;
-    margin-bottom: 50px;
-    text-align: center;
-    
-}
-.list-section .mona-title h2{
-    font-size: 30px;
-    color: #3C3431;
-}
-
-.product{
-    width: 100%;
-    max-width: 25%;
+.cot{
     padding: 0 15px 30px;
 }
-.product button{
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 30px;
-    position: absolute;
-    left: 20px;
-    transition: .3s ease;
+ 
+.product-list{
+    margin: 0 0 24px;
+}
+.product-list a{
+    color: #1C1C1C;
+}
+.product-list li a:hover{
+    color: #E8598F;
+}
+.product-list ul{
+    border: 1px solid rgba(226, 209, 209, 0.7);
+    padding: 20px;
+}
+.sub-divider{
+    border: 1px solid rgba(226, 209, 209, 0.7);
+    margin: 10px 0;
 }
 
-.product .anh:hover > button{
-    transform: translateY(-50px);
-    cursor: pointer;
+.nav-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.product .anh{
+.nav-list li .desc-img{
+    margin: 0 15px 5px;
+    font-size: 14px;
+}
+.desc-img a:hover{
+    color: #e8598f;
+}
+.large-3{
+    width: 100%;
+    max-width: 25%;
+}
+.large-9{
+    width: 100%;
+    max-width: 75%;
+    flex-wrap: wrap; 
+}
+.two-col{
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cot-third{
+    width: 100%;
+    max-width: 33.33333%;
+    text-align: center;
+    padding: 0 10px 20px;
+}
+.cot-third .anh{
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
 .anh img{
     width: 100%;
@@ -272,125 +240,40 @@ li:hover > .sub-menu{
     display: block;
     transition: .5s ease;
 }
-.anh img:hover{
+.cot-third .anh:hover img{
     transform: scale(1.1);
 }
 
-.product-desc{
+.cot-third .text-desc{
     padding: 10px 10px;
-    white-space: nowrap;   
     overflow: hidden;       
     text-overflow: ellipsis;
     background-color: whitesmoke;
-    text-align: center;
 }
-.product-desc p{
-    font-size: 10px;
-    padding-top: 10px;
-    line-height: 1.6;
-
-}
-.product-desc .price{
+.text-desc h4{
+    text-align: left;
     font-size: 15px;
-    padding-top: 15px;
-    font-weight: 600;
-}
-
-
-
-
-.list-section .buy-btn{
-    margin: 20px auto;
-}
-/*Banner*/
-.banner-two{
-    width: 100%;
-    display: flex;
-}
-.banner img{
-    width: 100%;
-    height: 100%;
-    display: block;     /*dùng display: block thì ảnh sẽ ko bị thừa ở dưới*/
-    transition: .5s ease;
-}
-.banner{
-    width: 100%;
-    overflow: hidden;
-}
-.banner:hover img{
-    transform: scale(1.1);
-}
-
-/*Tin tức*/
-#news{
-    background-color: whitesmoke;
-    padding: 15px 0;
-}
-.new-list{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.new-col{
-    width: 25%;
-    margin: 0 20px;
-    position: relative;
-}
-.new-img{
-    width: 100%;
-    overflow: hidden;
-
-}
-.new-img img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: .5s ease;
-}
-.new-img:hover img{
-    transform: scale(1.1);
-}
-.new-desc{
-    width: 75%;
-    background: white;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    line-height: 1.6;
-}
-.new-desc h4{
-    color: #1C1C1C;
-    white-space: nowrap;   
-    overflow: hidden;       
-    text-overflow: ellipsis;
-    text-align: center;
-    margin: 10px 10px;
-}
-.new-desc p{
-    color: #767676;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
     -webkit-box-orient: vertical;  
-    overflow: hidden;       
-    margin: 0 10px;
-    font-size: 13px;
+    overflow: hidden;
 }
-.buy-btn.more{
-    margin-top: 70px;
+.text-desc a{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
-.new-desc .link-new{
-    margin: 30px 10px 0;
+.text-desc a{
+    color: #000;
+}
+.text-desc a:hover{
     color: #E8598F;
-    font-size: 12px;
-    font-weight: 600;
 }
-.new-desc .link-new:hover{
-    color: red;
-}
+
 /*About section*/
 .about-section{
     width: 100%;
@@ -427,13 +310,10 @@ li:hover > .sub-menu{
 .divider-about{
     height: 300px;
     border: 1px dashed rgb(199, 193, 193);
-
-}
-form{
     margin: 0 10px;
 }
 form .email-input{
-    padding: 10px 60px 10px 10px;
+    padding: 10px 80px 10px 10px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -447,19 +327,6 @@ form .btn-input{
     color: white;
     border-radius: 4px;
 }
-
-
-
-/*Footer*/
-#footer{
-    text-align: center;
-    background-color: #000;
-    padding: 10px 15px;
-}
-.copyright{
-    color: #3C3431;
-}
-
 /*Modal*/
 .modal.open {
     display: flex;  
@@ -489,8 +356,8 @@ form .btn-input{
 }
 .register-container{
     position: absolute;
-    width: 900px;
     right: -2000px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
@@ -615,6 +482,9 @@ form .btn-input{
     .register-container, .login-container{
         width: 100%;
     }
+    .cot-third{
+        max-width: 50%;
+    }
     .about-section .w3{
         max-width: 25%;
     }
@@ -647,7 +517,7 @@ form .btn-input{
         color: #fff;
     }
     #nav li{
-        background-color: transparent;
+        background-color: transparent !important;
         display: block;
     }
     .menu-header{
@@ -669,22 +539,8 @@ form .btn-input{
     .register-container, .login-container{
         width: 100%;
     }
-    .product{
-        max-width: 50%;
-    }
-    .benefit-section .divider{
-        width: 100%;
-        height: 1px;
-        background-color: rgb(199, 193, 193);
-        margin: 20px 0;
-        border-style: none;
-    }
-    
-    .benefit-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .cot-third{
+        max-width: 100%;
     }
     .about-section .w3{
         max-width: 25%;
@@ -694,5 +550,6 @@ form .btn-input{
 
     }
     
-    
 }
+
+

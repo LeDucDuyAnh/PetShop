@@ -4,49 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên hệ</title>
-    <link rel="stylesheet" href="assets/css/lienhe.css">
+    <link rel="stylesheet" href="/HueCIT/assets/css/lienhe.css">
     <script src="./vendo/fontawesome/js/all.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/HueCIT/images/favicon.ico">
 </head>
 <body>
     <div id="main">
         <!----Header---->
-        <div id="header" class="row">
-            <div class="header-logo">
-                <a href="index.html"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+        <div id="header">
+            <div class="list">
+                <button class="menu-header">
+                    <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+                </button>
+                <div class="header-logo">
+                    <a href="index.html"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                </div>
+    
+                <ul id="nav" class="nav-menu">
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="chocanh.html">CHÓ CẢNH</a></li>
+                    <li><a href="meocanh.html">MÈO CẢNH</a></li>
+                    <li class="food"><a href="doan.html">ĐỒ ĂN</a>
+                        <ul class="sub-menu">
+                            <li><a href="doandogcat/dogfood.html">ĐỒ ĂN CHO CHÓ</a></li>
+                            <li><a href="doandogcat/catfood.html">ĐỒ ĂN CHO MÈO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li style="background: #30b5b2;"><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+    
+                <ul id="search-btn">
+                    <li><button><i class='bx bx-search-alt'></i></button>
+                        <div class="find">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <a href=""><i class='bx bx-search-alt'></i></a>
+                        </div>
+                    </li>
+                    <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
+                    <li><button><i class='bx bxs-cart-add'></i></button></li>
+                </ul>
             </div>
-
-            <ul id="nav">
-                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
-                <li><a href="#">CHÓ CẢNH</a></li>
-                <li><a href="#">MÈO CẢNH</a></li>
-                <li><a href="#">ĐỒ ĂN</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">ĐỒ ĂN CHO CHÓ</a></li>
-                        <li><a href="#">ĐỒ ĂN CHO MÈO</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">PHỤ KIỆN</a></li>
-                <li><a href="#">TIN TỨC</a></li>
-                <li><a style="background: #30b5b2;" href="#">LIÊN HỆ</a></li>
-            </ul>
-
-            <ul id="search-btn">
-                <li><button><i class='bx bx-search-alt'></i></button>
-                    <div class="find">
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <a href=""><i class='bx bx-search-alt'></i></a>
-                    </div>
-                </li>
-                <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
-                <li><button><i class='bx bxs-cart-add'></i></button></li>
-            </ul>
         </div>
 
         <!---Content---->
         <div id="content">
             <div class="roww contact-content">
-                <div class="column column-half about">
+                <div class="column column-half in4">
                     <div class="title">
                         <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
                         <br>
@@ -77,40 +83,41 @@
             </div>
         </div>
         <!----About---->
-        <div id="about">
-            <div class="about-section">
-                <div class="col col-left">
+        <div class="about-section">
+            <div class="list container about">
+                <div class="w3 left">
                     <h4>ĐIỀU HƯỚNG</h4>
                     <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Về chúng tôi</a></li>
-                        <li><a href="#">Chó cảnh</a></li>
-                        <li><a href="#">Mèo cảnh</a></li>
-                        <li><a href="#">Đồ ăn</a></li>
-                        <li><a href="#">Phụ kiện</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Về chúng tôi</a></li>
+                            <li><a href="chocanh.html">Chó cảnh</a></li>
+                            <li><a href="meocanh.html">Mèo cảnh</a></li>
+                            <li><a href="doan.html">Đồ ăn</a></li>
+                            <li><a href="phukien.html">Phụ kiện</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="divider-about"></div>
-                <div class="col col-mid">
+                <div class="w4 mid">
                     <div class="logo-about">
-                        <a href="index.html"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                        <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
                         
                     </div>
                     <form action="">
-                        <input class="text" type="text" name="" id="" placeholder="Email ..." required>
+                        <input class="email-input" class="text" type="text" name="" id="" placeholder="Email ..." required>
                         <input class="btn-input" type="submit" value="GỬI">
                     </form>
                 </div>
                 <div class="divider-about"></div>
-                <div class="col col-right">
+                <div class="w3 right">
                     <h4>THÔNG TIN LIÊN HỆ</h4>
                     <ul>
                         <li><i class='bx bxs-map'></i> 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
                         <li><i class='bx bxs-phone-call'></i> 0387455830</li>
-                        <li><i class='bx bxs-envelope' ></i>lddanh92tcv2017@gmail.com</li>
+                        <li><i class='bx bxs-envelope' ></i>lddanh92tcv2017@
+                            gmail.com</li>
                         <li><i class='bx bxl-facebook'></i><a href="https://www.facebook.com/duyanhdeptraiqua"></a>Le Duc Duy Anh</li>
                     </ul>
                 </div>
@@ -199,6 +206,16 @@
         </div>
     </div>
     <script>
+        /*Hàm thay đổi tiêu đề khi Responsive*/
+        function myMenuFunction(){
+            var i = document.getElementById("nav");
+            if(i.className === "nav-menu"){
+                i.className += " responsive";
+            }
+            else{
+                i.className = "nav-menu";
+            }
+        }
         /* Modal đăng nhập */
         const buyBtn = document.querySelector('.js-user')
         const modal = document.querySelector('.js-modal')
@@ -231,10 +248,10 @@
         var y = document.getElementById("register")
         function login(){
             x.style.left = "0px";
-            y.style.right = "-950px";
+            y.style.right = "-2000px";
         }
         function register(){
-            x.style.left = "-950px";
+            x.style.left = "-2000px";
             y.style.right = "0px";
         }
     </script> 
